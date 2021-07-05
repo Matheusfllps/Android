@@ -1,0 +1,138 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3) );
+    text-align: center;
+ 
+   /* color: white;*/
+    height: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* max-width: 800px;
+    min-width: 400px;*/
+}
+nav{
+    text-align: left;
+   padding-top: 111px;
+  
+    }
+a.menu{
+    color: var(--cor1);
+    text-decoration: none;
+    margin-left: 12px;
+   
+}
+a.menu:hover{
+    color: var(--cor4);
+    background-color: var(--cor1);
+    border-radius: 2px;
+    padding: 5px;
+   
+}
+
+h4{
+    padding-top: 25px;
+    color: white;
+    font-size: 16px;
+    margin-left: 23%;
+    margin-right: 24.5%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+    
+}
+@media (max-width: 570px){
+    h4{
+        margin: 0;
+    }
+}
+
+main{
+   background-color: var(--cor0);
+   }
+  
+ article{
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
+    padding: 10px;
+ }
+      @media (max-width: 1060px) {
+         article{
+            margin: 0;
+         }
+      }
+ .ir{
+     width: 100%;
+ }
+  
+ a.art{
+     text-decoration: none;
+     font-weight: bold;
+     color: var(--cor4);
+ }
+ @font-face {
+         font-family: 'IDroid';
+         src: url('IDroid.otf') format('opentype'),url('IDroid Bold')format('opentype');
+         font-weight: normal;
+         font-style: normal;
+     }
+     h1{
+     font-family: 'IDroid';
+     color: var(--cor4) ;
+     padding-top: 10px;
+ }
+ h1.cabecalho{
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     }
+ p{
+     text-indent: 20px;
+     margin-top: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1em;
+     line-height: 2em;
+ }
+ h2{
+     font-family: 'IDroid';
+     color: var(--cor4);
+     margin-top: 10px;
+     padding-left: 5px;
+     background-image: linear-gradient(to right,var(--cor1), #ffffff)
+ }
+ a.pv{
+     background-color: var(--cor1);
+     text-decoration: none;
+     padding-left:  3px;
+     padding-right: 10px;
+ }
+ /*.corl{
+     color:var(--cor4);
+     text-decoration: none;
+ }*/
+ aside{
+     text-align: center;
+ }
+ .bug{
+     text-align: justify;
+ }
+ #video{
+     background-color: var(--cor4);
+     padding-top: 3%;
+     padding-bottom: 3%;
+     margin: -10px;
+     width: 100%;
+ }
+ li{
+     text-align:left;
+ }
+ :root{
+     --cor0: #c5ebd6;
+     --cor1: #83e1ad;
+     --cor2: #3ddc84; 
+     --cor3: #2fa866;
+     --cor4: #063d1e;
+  }
