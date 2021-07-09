@@ -123,7 +123,8 @@ main{
      background-color: var(--cor4);
      padding-top: 3%;
      padding-bottom: 3%;
-     margin: -10px;
+     padding-left: 5%;
+     padding-right: 5%;
      width: 100%;
  }
  li{
@@ -138,4 +139,8 @@ main{
   }
   footer{
       text-align: center;
+      background-color: var(--cor4);
+      color: white;
   }
+   
+  
