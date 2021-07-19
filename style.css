@@ -3,44 +3,54 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    font-family: Arial, Helvetica,Verdana, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 header{
     background-image: linear-gradient(to top, var(--cor4), var(--cor3) );
     text-align: center;
- 
-   /* color: white;*/
-    height: 250px;
+    min-height: 150px;
     font-family: Arial, Helvetica, sans-serif;
-    /* max-width: 800px;
-    min-width: 400px;*/
+   
 }
-nav{
-    text-align: left;
-   padding-top: 137px;
-  
-    }
+
+
 a.menu{
     color: var(--cor1);
     text-decoration: none;
     margin-left: 12px;
-   
+    transition-duration: .5s;
 }
 a.menu:hover{
     color: var(--cor4);
     background-color: var(--cor1);
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 5px;
    
 }
 
-h4{
-    padding-top: 25px;
+h4 {
+    padding-top: 20px;
     color: white;
-    font-size: 16px;
-    margin-left: 23%;
-    margin-right: 24.5%;
+    font-size: 1.2em;
+   max-width: 600px;/*quando coloca a larguma maxiam de 500 o h4 automaticamente vira um bloco*/
+   margin: auto;
+   padding-left: 10px;
+   padding-right: 10px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
     
 }
+nav{
+  text-align: left;
+   padding: 10px;
+  
+  
+  
+   
+  
+   padding-bottom: 10px;
+    }
 @media (max-width: 570px){
     h4{
         margin: 0;
@@ -48,23 +58,34 @@ h4{
 }
 
 main{
-   background-color: var(--cor0);
+   background-color: var(--cor1);
+   
+   }
+   main img{
+       width: 100%;
+   }
+   main img.pequena{
+       width: 50%;
+       display: block;
+       margin: auto;
    }
   
  article{
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 100%;
     text-align: justify;
     background-color: white;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
     padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: 1000px;
+   min-width: 300px;
+   margin: auto;
  }
       @media (max-width: 1060px) {
          article{
             margin: 0;
          }
-      }
+    }
  .ir{
      width: 100%;
  }
@@ -79,15 +100,18 @@ main{
          src: url('IDroid.otf') format('opentype'),url('IDroid Bold')format('opentype');
          font-weight: normal;
          font-style: normal;
+         
      }
      h1{
      font-family: 'IDroid';
      color: var(--cor4) ;
      padding-top: 10px;
  }
- h1.cabecalho{
+h1.cabecalho {
      color: white;
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: Arial, Helvetica, Verdana, sans-serif;
+     padding-top: 65px;
+     font-size: 3em;
      }
  p{
      text-indent: 20px;
@@ -113,22 +137,72 @@ main{
      color:var(--cor4);
      text-decoration: none;
  }*/
- aside{
+ aside#conteiner{
      text-align: center;
+     background-color: #83e1ad;
+     padding: 10px;
+     border-radius: 10px;
+     margin-top: 1px;
+ }
+ aside#conteiner h3{
+     text-align: left;
+     background-color: 
+     var(--cor3);
+     color:  white;
+     padding: 6px;
+     margin: -9px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
  }
  .bug{
      text-align: justify;
  }
  #video{
      background-color: var(--cor4);
-     padding-top: 3%;
+     margin: 0;
+     padding: 0;
+     margin-left:-10px;
+     margin-right:-10px;
+     padding-left: 0px;
+     padding-right: 0px;
+    /* padding-top: 3%;
      padding-bottom: 3%;
-     padding-left: 5%;
-     padding-right: 5%;
-     width: 100%;
+     margin: -10px;
+     width: 100%;*/
  }
- li{
-     text-align:left;
+ .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 90%;
+    height: 90%;
+   }
+  .separar{
+    
+     display: grid;
+     /*grid-column: 1/2;*/
+     grid-template-columns: 500px 200px;
+     grid-template-rows: 24px 24px 24px 24px 24px 24px 40px;
+     text-align: justify;
+
+     
+ }
+ p a{
+     text-decoration: none;
+     
+ }
+ p.txt{
+    text-align: justify;
  }
  :root{
      --cor0: #c5ebd6;
@@ -136,11 +210,12 @@ main{
      --cor2: #3ddc84; 
      --cor3: #2fa866;
      --cor4: #063d1e;
+     --fonte-destaque:'Bebas Neue', cursive;
+
   }
+  
   footer{
       text-align: center;
       background-color: var(--cor4);
       color: white;
   }
-   
-  
