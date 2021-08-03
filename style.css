@@ -89,6 +89,10 @@ main{
  .ir{
      width: 100%;
  }
+ a.externa::after{
+     content: '\00a0\1F517';
+
+ }
   
  a.art{
      text-decoration: none;
@@ -154,6 +158,30 @@ h1.cabecalho {
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
  }
+ aside strong{
+     color: var(--cor3);
+ }
+ aside h3{
+     background-color: var(--cor4);
+     padding: 10px;
+     margin: -10px -10px 0px -10px;
+     border-radius: 10px 10px 0px 0px;
+     color: white;
+ }
+ aside a{
+     color: var(--cor4);
+     font-weight: bolder;
+ }
+ aside{
+     background-color: var(--cor1);
+     list-style-position: inside;
+     border-radius: 10px;
+     padding: 10px;
+ }
+ aside ul{
+     columns: 2;
+     list-style-type: '\2714\00a0\00a0';/*não é compativel com qualquer navegador*/
+ }
  .bug{
      text-align: justify;
  }
@@ -218,4 +246,11 @@ h1.cabecalho {
       text-align: center;
       background-color: var(--cor4);
       color: white;
+  }
+  footer a{
+      text-decoration: none;
+      color: white;
+  }
+  footer a:hover{
+     color: var(--cor3);
   }
